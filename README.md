@@ -13,8 +13,22 @@ Terraces are a defining feature of Mediterranean mountain landscapes, enabling a
 This research was supported by the REACT4MED Project (GA 2122), which is funded by PRIMA, the Partnership for Research and Innovation in the Mediterranean Area, a Programme supported by Horizon 2020, the European Union’s Framework Programme for Research and Innovation.
 ______
 
+## Objective 
+1. To present an integrated predictive modelling framework that combines GIS with data-driven ML techniques, capable of learning from positive and unlabelled datasets for terrace suitability analysis  
+2. To generate a high-resolution terrace suitability map for the Troodos Mountains, Cyprus
+3. To analyse the environmental, regulatory and socio-economic parameters that affect the suitability of land for mountain terraces
+4. To analyse recent land use dynamics (i.e., abandonment and expansion of mountain terraces)
+_______
+
+## Methodology 
+This study was structured in six sequential steps (Fig. 1). First, elevation and slope criteria were used to delineate the mountain area. Second, within this area, all crop plots were assumed to be terraced land. Following this assumption, areas occupied by these crop plots were classified as Terrace-Present (TP) and areas without crop plots were classified as Terrace-Absent (TA). Third, 16 covariates were identified and a correlation analysis was performed to reduce redundancy among variables. Fourth, a hybrid framework of PU-learning and supervised XGBoost classification was adopted to predict the suitability of terrace agriculture using the refined set of non-redundant covariates. The resulting continuous suitability scores were then classified into four distinct suitability classes using the k-means clustering method. Fifth, the SHapley Additive exPlanations (SHAP) analysis was performed to evaluate the influence of individual covariates on land suitability. Finally, agricultural crop plots of 2017 and 2024 were utilized to determine the abandonment and expansion of these environments and corresponding suitability classes. The following sections provide a detail description of each step.
+
+
 ## Study Area
-Contains raw and processed geospatial datasets.
+
+![Study Area](Figure_2.png)
+Elevation map of Cyprus with the 500 m isoline and slope map of areas above 500 m, highlighting the Troodos Mountains, delineated using the 5-m DEM (Kyriakou, 2022)
+
 
 ## Scripts
 Python scripts for analysis and modeling.
