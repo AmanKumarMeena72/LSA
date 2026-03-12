@@ -22,12 +22,21 @@ _______
 
 ## Methodology 
 This study was structured in six sequential steps (Fig. 1). First, elevation and slope criteria were used to delineate the mountain area. Second, within this area, all crop plots were assumed to be terraced land. Following this assumption, areas occupied by these crop plots were classified as Terrace-Present (TP) and areas without crop plots were classified as Terrace-Absent (TA). Third, 16 covariates were identified and a correlation analysis was performed to reduce redundancy among variables. Fourth, a hybrid framework of PU-learning and supervised XGBoost classification was adopted to predict the suitability of terrace agriculture using the refined set of non-redundant covariates. The resulting continuous suitability scores were then classified into four distinct suitability classes using the k-means clustering method. Fifth, the SHapley Additive exPlanations (SHAP) analysis was performed to evaluate the influence of individual covariates on land suitability. Finally, agricultural crop plots of 2017 and 2024 were utilized to determine the abandonment and expansion of these environments and corresponding suitability classes. The following sections provide a detail description of each step.
+<p align="center">
+  <img src="Figure_1.png" width="600"><br>
+  <em>Fig.1 Conceptual workflow summarizing the six methodological steps adopted for suitability mapping, feature importance analysis and recent land use dynamics; rectangles denote computational processes and parallelogram show data inputs/outputs .</em>
+</p>
 
+_________
 
 ## Study Area
+The study area comprises the Troodos Mountains, located in Cyprus and encompassing approximately 40% of the island, with a maximum elevation of 1,951 m a.s.l. For the purposes of this study, areas with elevations ≥500 m and slope gradients ≥15% were delineated in accordance with the Cyprus Rural Development Program and FAO guidelines, representing the minimum topographic thresholds suitable for bench terrace construction.  
+<p align="center">
+  <img src="Figure_2.png" width="600"><br>
+  <em>Fig.2 Elevation map of Cyprus with the 500 m isoline and slope map of areas above 500 m, highlighting the Troodos Mountains, delineated using the 5-m DEM (Kyriakou, 2022) .</em>
+</p>
 
-![Study Area](Figure_2.png)
-Elevation map of Cyprus with the 500 m isoline and slope map of areas above 500 m, highlighting the Troodos Mountains, delineated using the 5-m DEM (Kyriakou, 2022)
+
 
 
 ## Scripts
