@@ -1,0 +1,30 @@
+# Terrace Suitability Mapping using Positive-Unlabelled Learning
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+
+A machine learning framework for predicting agricultural terrace suitability using positive and unlabelled datasets, applied to the Troodos Mountains, Cyprus.
+
+## 📋 Overview
+
+This repository contains the complete code and data pipeline for our paper: *"A machine learning framework for predicting agriculture terrace suitability using positive and unlabelled datasets: an application for the Troodos Mountains, Cyprus"*
+
+**Key Contributions:**
+- Novel PU-learning framework for terrace suitability analysis
+- High-resolution (5m) suitability map for Troodos Mountains
+- Analysis of terrace abandonment (29%) and expansion (12%) between 2017-2024
+- Interactive GEE application for decision-makers
+
+## 🗺️ Study Area
+
+The Troodos Mountains, Cyprus (elevation ≥500m, slope ≥15%)
+
+## 🚀 Quick Start
+
+```bash
+# Clone repository
+git clone https://github.com/YOUR_USERNAME/terrace-suitability-pu-learning.git
+cd terrace-suitability-pu-learning
+
+# Install dependencies
+pip install -r requirements.txt
