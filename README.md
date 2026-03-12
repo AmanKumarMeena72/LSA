@@ -13,7 +13,7 @@ Terraces are a defining feature of Mediterranean mountain landscapes, enabling a
 This research was supported by the REACT4MED Project (GA 2122), which is funded by PRIMA, the Partnership for Research and Innovation in the Mediterranean Area, a Programme supported by Horizon 2020, the European Union’s Framework Programme for Research and Innovation.
 ______
 
-## Data
+## Study Area
 Contains raw and processed geospatial datasets.
 
 ## Scripts
